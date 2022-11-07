@@ -8,7 +8,7 @@
 		if(isset($pageTitle))
 			echo $pageTitle." | Vincent Restaurant - Your Restaurant";
 		else
-			echo "Vincent Restaurant | Your Restaurant";
+			echo "LA ROSA | Your Restaurant";
 	}
 
 	/*

@@ -3,6 +3,7 @@
 <?php
 
     include "connect.php";
+echo "included successfully" ;
     include 'Includes/functions/functions.php';
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";

@@ -1,4 +1,4 @@
-²<!-- PHP INCLUDES -->
+<!-- PHP INCLUDES -->
 
 <?php
 

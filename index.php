@@ -9,11 +9,12 @@
     //include "connect.php";
 	
     //include 'Includes/functions/functions.php';
-    //include "Includes/templates/header.php";
-    //include "Includes/templates/navbar.php";
+    include "Includes/templates/header.php";
+    include "Includes/templates/navbar.php";
 
 
     //Getting website settings
+	/*
 
     $stmt_web_settings = $con->prepare("SELECT * FROM website_settings");
     $stmt_web_settings->execute();
@@ -45,6 +46,7 @@
             $restaurant_address = $option['option_value'];
         }
     }
+	*/
 
 ?>
 	<!-- HOME SECTION -->

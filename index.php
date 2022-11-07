@@ -1,9 +1,5 @@
 <!-- PHP INCLUDES -->
 
-<!DOCTYPE html>
-<html>
-
-<body>
 <?php
 
     //include "connect.php";

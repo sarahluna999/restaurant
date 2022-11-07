@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=resto.ck4nkgx3zsuf.us-east-1.rds.amazonaws.com;dbname=resto';
+    $dsn = 'mysql:host=resto.ck4nkgx3zsuf.us-east-1.rds.amazonaws.com;dbname=restaurant-website';
 	$user = 'admin';
 	$pass = 'easy1999';
 	$option = array(

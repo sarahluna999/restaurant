@@ -4,14 +4,56 @@
 <html>
 
 <body>
+<?php
 
+    //include "connect.php";
+	
+    //include 'Includes/functions/functions.php';
+    //include "Includes/templates/header.php";
+    //include "Includes/templates/navbar.php";
+
+
+    //Getting website settings
+
+    $stmt_web_settings = $con->prepare("SELECT * FROM website_settings");
+    $stmt_web_settings->execute();
+    $web_settings = $stmt_web_settings->fetchAll();
+
+    $restaurant_name = "";
+    $restaurant_email = "";
+    $restaurant_address = "";
+    $restaurant_phonenumber = "";
+
+    foreach ($web_settings as $option)
+    {
+        if($option['option_name'] == 'restaurant_name')
+        {
+            $restaurant_name = $option['option_value'];
+        }
+
+        elseif($option['option_name'] == 'restaurant_email')
+        {
+            $restaurant_email = $option['option_value'];
+        }
+
+        elseif($option['option_name'] == 'restaurant_phonenumber')
+        {
+            $restaurant_phonenumber = $option['option_value'];
+        }
+        elseif($option['option_name'] == 'restaurant_address')
+        {
+            $restaurant_address = $option['option_value'];
+        }
+    }
+
+?>
 	<!-- HOME SECTION -->
 
 	<section class="home-section" id="home">
 		<div class="container">
 			<div class="row" style="flex-wrap: nowrap;">
 				<div class="col-md-6 home-left-section">
-					<div style="padding: 100px 0px; color: black;">
+					<div style="padding: 100px 0px; color: white;">
 						<h1>
 							RESTAURANT LA ROSA.
 						</h1>

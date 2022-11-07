@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=resto';
+    $dsn = 'mysql:host=resto.ck4nkgx3zsuf.us-east-1.rds.amazonaws.com;dbname=resto';
 	$user = 'admin';
 	$pass = 'easy1999';
 	$option = array(

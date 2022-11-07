@@ -1,9 +1,11 @@
 <!-- PHP INCLUDES -->
+<!DOCTYPE html>
+<html>
 
+<body>
 <?php
 
     include "connect.php";
-echo "included successfully" ;
     include 'Includes/functions/functions.php';
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";
@@ -570,3 +572,5 @@ echo "included successfully" ;
 	    }); 
 	    
 	</script>
+	</body>
+</html>

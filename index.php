@@ -3,10 +3,6 @@
 <?php
 
     include "connect.php";
-   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
-   if (mysqli_connect_errno()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
-
-    $database = mysqli_select_db($connection, DB_DATABASE);
     include 'Includes/functions/functions.php';
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";

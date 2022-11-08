@@ -1,4 +1,4 @@
-<!-- PHP INCLUDES -->
+²<!-- PHP INCLUDES -->
 
 <?php
 
@@ -8,15 +8,12 @@
     include "Includes/templates/navbar.php";
 
 
-
     //Getting website settings
-$connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
 
-  if (mysqli_connect_errno()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    $stmt_web_settings = $con->prepare("SELECT * FROM website_settings");
+    $stmt_web_settings->execute();
+    $web_settings = $stmt_web_settings->fetchAll();
 
-  $database = mysqli_select_db($connection, DB_DATABASE);
-
-    $web_settings =mysqli_query($connection, "SELECT * FROM website_settings");
     $restaurant_name = "";
     $restaurant_email = "";
     $restaurant_address = "";
@@ -142,8 +139,7 @@ $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
 					<ul style="text-align: center;margin-bottom: 70px">
 						<?php
 
-	                        $stmt =mysqli_query($connection,"Select * from menu_categories" );
-						
+	                        $stmt = $con->prepare("Select * from menu_categories");
 	                        $stmt->execute();
 	                        $rows = $stmt->fetchAll();
 	                        $count = $stmt->rowCount();

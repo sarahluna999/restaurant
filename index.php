@@ -13,7 +13,7 @@
 
 
     //Getting website settings
-
+/*
     $stmt_web_settings = $con->prepare("SELECT * FROM website_settings");
     $stmt_web_settings->execute();
     $web_settings = $stmt_web_settings->fetchAll();
@@ -43,7 +43,7 @@
         {
             $restaurant_address = $option['option_value'];
         }
-    }
+    }*/
 
 ?>
 

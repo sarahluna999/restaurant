@@ -1,23 +1,13 @@
 <html>
 	<body>
 <?php
-    $dsn = 'mysql:host=resto.ck4nkgx3zsuf.us-east-1.rds.amazonaws.com;dbname=restaurant-website';
-	$user = 'admin';
-	$pass = 'easy1999';
-	$option = array(
-		PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
-	);
-	try
-	{
-		$con = new PDO($dsn,$user,$pass,$option);
-		$con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-		echo 'Good Very Good !';
-	}
-	catch(PDOException $ex)
-	{
-		echo "Failed to connect with database ! ".$ex->getMessage();
-		die();
-	}
+
+define('DB_SERVER', 'resto.ck4nkgx3zsuf.us-east-1.rds.amazonaws.com');
+define('DB_USERNAME', 'admin');
+define('DB_PASSWORD', 'easy1999');
+define('DB_DATABASE', 'restaurant-website');
+
 ?>
-		</html>
+		
 	</body>
+</html>

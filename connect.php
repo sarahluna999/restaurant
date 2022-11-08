@@ -1,3 +1,5 @@
+<html>
+<body>	
 <?php
     $dsn = 'mysql:host=resto.ck4nkgx3zsuf.us-east-1.rds.amazonaws.com;dbname=restaurant-website';
 	$user = 'admin';
@@ -17,3 +19,6 @@
 		die();
 	}
 ?>
+</body>	
+</html>
+	

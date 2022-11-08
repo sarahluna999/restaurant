@@ -1,4 +1,4 @@
-²<!-- PHP INCLUDES -->
+<!-- PHP INCLUDES -->
 
 <?php
 
@@ -49,7 +49,7 @@
 		<div class="container">
 			<div class="row" style="flex-wrap: nowrap;">
 				<div class="col-md-6 home-left-section">
-					<div style="padding: 100px 0px; color: white;">
+					<div style="padding: 100px 0px; color: black;">
 						<h1>
 							RESTAURANT LA ROSA.
 						</h1>

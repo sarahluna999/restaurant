@@ -1,13 +1,10 @@
+²<!-- PHP INCLUDES -->
 
-<!DOCTYPE html>
-<html>
-	
-	<body>
-	<?php
+<?php
 
     include "connect.php";
-    //include 'Includes/functions/functions.php';
-    //include "Includes/templates/header.php";
+    include 'Includes/functions/functions.php';
+    include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";
 
 
@@ -46,11 +43,13 @@
 
 ?>
 
+	<!-- HOME SECTION -->
+
 	<section class="home-section" id="home">
 		<div class="container">
 			<div class="row" style="flex-wrap: nowrap;">
 				<div class="col-md-6 home-left-section">
-					<div style="padding: 100px 0px; color: black;">
+					<div style="padding: 100px 0px; color: white;">
 						<h1>
 							RESTAURANT LA ROSA.
 						</h1>
@@ -492,7 +491,7 @@
 
     <!-- FOOTER BOTTOM  -->
 
-    
+    <?php include "Includes/templates/footer.php"; ?>
 
     <script type="text/javascript">
 
@@ -570,7 +569,3 @@
 	    }); 
 	    
 	</script>
-
-	
-	</body>
-</html>

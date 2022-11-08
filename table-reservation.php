@@ -4,7 +4,7 @@
     //Set page title
     $pageTitle = 'Table Reservation';
 
-    include "connect.php";
+    //include "connect.php";
     include 'Includes/functions/functions.php';
     include "Includes/templates/header.php";
     include "Includes/templates/navbar.php";
